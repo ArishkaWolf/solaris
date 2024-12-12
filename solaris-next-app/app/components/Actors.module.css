@@ -21,19 +21,21 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  width: 100%;
 }
 .card {
   position: relative;
-  width: 312px;
-  height: 490px;
+  width: 300px;
+  height: 500px;
   border-radius: 10px;
-  box-shadow: 0px 14px 39px -11px var(--gray);
-  background: var(--white);
-  margin-right: 80px;
+  box-shadow: 0px 14px 39px -11px rgb(96, 1, 137);
+  margin-right: 20px;
+  border: 2px solid white;
 }
 .image {
   border-radius: 10px 10px 0 0;
   height: 200px;
+  width: 280px;
   object-fit: cover;
   display: block;
   margin: 0 auto;
@@ -42,37 +44,32 @@
   position: absolute;
   width: 282px;
   height: 42px;
-  left: 0px;
+  left: 14px;
   top: 266px;
   color: var(--black);
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 130%;
   text-align: left;
 }
-.productDescription .bold {
-  font-weight: 500;
-}
-.productDescription .normal {
-  font-weight: 400;
-}
+
 .role {
   position: absolute;
   width: 74px;
   height: 22px;
-  color: var(--gray);
+  color: rgba(177, 137, 240, 0.741);
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   text-align: left;
   top: 336px;
-  left: 0px;
+  left: 14px;
 }
 .roleName {
   position: absolute;
-  color: var(--black);
+  color: rgb(255, 255, 255);
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   text-align: left;
   top: 0px;
@@ -80,23 +77,24 @@
 }
 .fact {
   position: absolute;
-  color: var(--gray);
+  color: rgba(177, 137, 240, 0.741);
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   text-align: left;
-  top: 358px;
-  left: 0px;
+  top: 368px;
+  left: 14px;
+  right: 14px;
 }
 .factName {
-  color: var(--black);
+  color: rgb(255, 255, 255);
   font-family: Inter, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   margin-left: 6px;
 }
 .button {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
   background-color: #65058f;
   color: white;
@@ -116,9 +114,10 @@
 
 @media (max-width: 768px) {
   .ActorContainer {
-    width: 80%;
+    width: 100%;
     padding: 0 15px;
     margin-left: 0px;
+    overflow: visible;
  }
   .title {
     position: relative;
@@ -143,9 +142,12 @@
   .grid::-webkit-scrollbar {
     width: 0;
  }
-  .card {
-    scroll-snap-align: center;
- }
+ .card {
+  scroll-snap-align: center;
+  width: 280px;
+  height: 500px; 
+  margin-right: 20px; 
+}
   .productDescription {
     width: 250px;
  }
