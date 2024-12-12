@@ -1,0 +1,98 @@
+[
+    {
+      "id": 1,
+      "nameRu": "Бирюков Роман Владимирович",
+      "image": "/actors/roma.jpg",
+      "fact":"Это первая роль Романа в нашем театре. За время подготовки роли провел 76 часов в дороге))",
+      "role": "Крис",
+      "brand": {
+        "name": "Sorti",
+        "number": 100
+      },
+      "likeText": "Спасибо! Роман великолепен!"
+    },
+    {
+        "id": 2,
+        "nameRu": "Скулков Александр Владимирович",
+        "image": "/actors/sasha.jpg",
+        "fact":" ",
+        "role": "Снаут",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Александр играет потрясающе!"
+      },
+      {
+        "id": 3,
+        "nameRu": "Шарифулин Николай Григорьевич",
+        "image": "/actors/kolya.jpg",
+        "fact":" ",
+        "role": "Сарториус",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Николай потрясающий актер!"
+      },
+      {
+        "id": 4,
+        "nameRu": "Хаустова Анастасия Сергеевна",
+        "image": "/actors/asya.jpg",
+        "fact":" ",
+        "role": "Хари",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Анастасия невероятна!"
+      },
+      {
+        "id": 5,
+        "nameRu": "Лысенко Игорь Николаевич",
+        "image": "/actors/igor.jpg",
+        "fact":" ",
+        "role": "Гибарян",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Игорь просто замечателен!"
+      },
+      {
+        "id": 6,
+        "nameRu": "Ковалев Сергей Сергеевич",
+        "image": "/actors/sergey.jpg",
+        "fact":" ",
+        "role": "Лютер",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Сергей всегда на высоте!"
+      },
+      {
+        "id": 7,
+        "nameRu": "Иванов Артем Сергеевич",
+        "image": "/actors/artyom.jpg",
+        "fact":" ",
+        "role": "Бертон",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Артем потрясает!"
+      },
+      {
+        "id": 8,
+        "nameRu": "Казарова Кристина Рудольфовна",
+        "image": "/actors/kris.jpg",
+        "fact":" ",
+        "role": "Афроамериканка",
+        "brand": {
+          "name": "Sorti",
+          "number": 100
+        },
+        "likeText": "Спасибо! Кристина вдохновляет!"
+      }
+]
