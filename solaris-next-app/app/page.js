@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Banner from './components/Banner';
-import MusicBlock from './components/MusicBlock';
+import { TracksSection } from './components/TracksSection';
 import VideoBlock from './components/VideoBlock';
 import { Actors } from "./components/Actors";
 import Description from './components/Description'; 
@@ -13,7 +13,7 @@ export default function Home() {
       <Description />
       <Banner /> 
       <Actors />
-      <MusicBlock />
+      <TracksSection />
       {/* Другие секции сайта */}
     </div>
   );

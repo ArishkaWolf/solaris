@@ -1,4 +1,3 @@
-// app/components/VideoBlock.js
 import styles from './VideoBlock.module.css';
 
 const VideoBlock = () => {
@@ -6,10 +5,10 @@ const VideoBlock = () => {
     <div className={styles.videoBlock}>
       <video
         className={styles.video}
-        controls
         autoPlay
         loop
         muted
+        playsInline
         src="/nachal.mp4"
         poster="/video/poster.jpg"
       >

@@ -21,4 +21,18 @@
     font-size: 16px;
     font-weight: bold;
   }
+
+  .link {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .link:hover {
+    text-decoration: underline; 
+  }
+  
+  .logo {
+    cursor: pointer; 
+  }
+  
   

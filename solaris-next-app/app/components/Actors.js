@@ -38,7 +38,7 @@ export const Actors = () => {
 
                         <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
                         <button
-                            className={styles.button}  // Apply the local class here
+                            className={styles.button}  
                             onClick={() => handleLike(product.id, product.likeText)}
                         >
                             {likedProducts[product.id] ? likedProducts[product.id] : "ЛАЙК"}
