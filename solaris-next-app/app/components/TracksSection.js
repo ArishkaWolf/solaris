@@ -78,24 +78,38 @@ export const TracksSection = () => {
         </div>
 
         <div className={styles.controls}>
-          <button onClick={() => handleLike(currentTrack.id, "dislike")} className={styles.controlButton}>
-            💔
+          <button
+            onClick={() => handleLike(currentTrack.id, 'dislike')}
+            className={styles.controlButton}
+          >
+            <img
+              src="/dislike.png"
+              alt="Dislike"
+              className={styles.likeDislikeImage}
+            />
           </button>
           <button onClick={handlePrevious} className={styles.controlButton}>
             <img src="/previous.png" alt="Previous" className={styles.controlImage} />
           </button>
           <button onClick={handlePlayPause} className={styles.controlButton}>
             <img
-              src={isPlaying ? "/pause.png" : "/play.png"}
-              alt={isPlaying ? "Pause" : "Play"}
+              src={isPlaying ? '/pause.png' : '/play.png'}
+              alt={isPlaying ? 'Pause' : 'Play'}
               className={styles.controlImage2}
             />
           </button>
           <button onClick={handleNext} className={styles.controlButton}>
             <img src="/next.png" alt="Next" className={styles.controlImage} />
           </button>
-          <button onClick={() => handleLike(currentTrack.id, "like")} className={styles.controlButton}>
-            ❤️
+          <button
+            onClick={() => handleLike(currentTrack.id, 'like')}
+            className={styles.controlButton}
+          >
+            <img
+              src="/love.png"
+              alt="Like"
+              className={styles.likeDislikeImage}
+            />
           </button>
         </div>
         <audio
@@ -111,8 +125,8 @@ export const TracksSection = () => {
 };
 
 const formatTime = (time) => {
-  if (isNaN(time)) return "00:00";
+  if (isNaN(time)) return '00:00';
   const minutes = Math.floor(time / 60);
   const seconds = Math.floor(time % 60);
-  return `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
+  return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 };

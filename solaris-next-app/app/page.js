@@ -5,16 +5,19 @@ import { TracksSection } from './components/TracksSection';
 import VideoBlock from './components/VideoBlock';
 import { Actors } from "./components/Actors";
 import Description from './components/Description'; 
+import Translation from './components/Translation'; 
+import { FlipCard } from './components/FlipCard';
 
 export default function Home() {
   return (
     <div>
-      <VideoBlock />
+      <Banner />
+      <VideoBlock /> 
       <Description />
-      <Banner /> 
       <Actors />
+      <Translation />
       <TracksSection />
-      {/* Другие секции сайта */}
+      <FlipCard />
     </div>
   );
 }

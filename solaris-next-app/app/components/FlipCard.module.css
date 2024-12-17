@@ -1,0 +1,71 @@
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* Для эффекта 3D */
+    width: 300px;
+    height: 400px;
+    margin: 20px auto;
+  }
+  
+  .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out; /* Плавная анимация */
+    cursor: pointer;
+    will-change: transform; /* Оптимизация производительности */
+  }
+  
+  .flipped {
+    transform: rotateY(180deg); /* Переворот карточки */
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Скрывает сторону, которая не видна */
+    border-radius: 10px;
+    box-shadow: 0px 14px 39px -11px rgb(194, 161, 208);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box; /* Убедиться, что padding не ломает размеры */
+    transform: translateZ(0); /* Исправление размытости текста */
+  }
+  
+  .front {
+    background: none; /* Убираем белый фон */
+  }
+  
+  .back {
+    background: #000; /* Цвет задней стороны карточки */
+    color: #fff;
+    transform: rotateY(180deg); /* Повернуть заднюю сторону сразу */
+  }
+  
+  .coverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Изображение занимает весь размер карточки */
+  }
+  
+  .infoText {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 20px; /* Немного отступов для текста */
+    text-align: center;
+  }
+  
+  /* Убедиться, что текст четкий */
+  .front,
+  .back {
+    -webkit-font-smoothing: antialiased; /* Четкость текста */
+    -moz-osx-font-smoothing: grayscale; /* Четкость текста для macOS */
+  }
+  

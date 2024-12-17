@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
   color: #fff;
+  padding: 20px;
   height: 700px;
 }
 
@@ -13,7 +13,7 @@
   align-items: center;
   background: black;
   border-radius: 10px;
-  box-shadow: 0px 14px 39px -11px rgb(96, 1, 137);
+  box-shadow: 0px 14px 39px -11px rgb(133, 34, 176);
   border: 2px solid white;
   padding: 20px;
   margin-left: 20px;
@@ -44,7 +44,7 @@
 .controls {
   display: flex;
   justify-content: space-between;
-  gap: 4px;
+  gap: 12px;
   margin-top: 15px;
 }
 
@@ -70,6 +70,11 @@
 .controlImage2 {
   width: 42px; 
   height: 42px;
+}
+
+.likeDislikeImage {
+  width: 30px;
+  height: 30px;
 }
 
 .progressBar {
@@ -101,8 +106,29 @@
 
 
 @media (max-width: 768px) {
+  .tracksContainer {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    color: #fff;
+    height: 700px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: -40px;
+  }
   .trackCard {
-    width: 80%;
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0px 14px 39px -11px rgb(96, 1, 137);
+    border: 2px solid white;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 300px;
+    height: 550px;
+    text-align: center;
   }
 }
