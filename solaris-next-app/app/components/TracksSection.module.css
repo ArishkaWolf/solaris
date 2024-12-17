@@ -131,4 +131,12 @@
     height: 550px;
     text-align: center;
   }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 15px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
 }
