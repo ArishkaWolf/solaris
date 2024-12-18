@@ -116,7 +116,9 @@
   }
 
   .trackCard {
-    width: 80%;  
+    width: 80%;
+    margin-left: 5px; 
+    margin-right: 5px;  
   }
 
   .controls {
@@ -127,7 +129,7 @@
   }
 
   .controlButton {
-    margin: 0 8px;
+    margin: 0 6px;
     font-size: 20px;
   }
 
