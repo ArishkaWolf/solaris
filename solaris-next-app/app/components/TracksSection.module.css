@@ -43,6 +43,8 @@
 
 .controls {
   display: flex;
+  position: relative;
+  width: 100%;
   justify-content: space-between;
   gap: 12px;
   margin-top: 15px;
