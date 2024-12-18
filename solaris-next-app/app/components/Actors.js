@@ -23,7 +23,7 @@ export const Actors = () => {
                 {products.map((product) => (
                     <div key={product.id} className={styles.card}>
                         <img src={product.image} alt="Актер" className={styles.image} />
-                        <div className={styles.productDescription}>
+                        <div className={styles.Name}>
                             {product.nameRu.replace(product.brand.name, "")}
                         </div>
                         <div className={styles.role}>

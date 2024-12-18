@@ -7,6 +7,7 @@ import { Actors } from "./components/Actors";
 import Description from './components/Description'; 
 import Translation from './components/Translation'; 
 import { FlipCard } from './components/FlipCard';
+import { NewsFeed } from './components/NewsFeed';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Actors />
       <Translation />
       <TracksSection />
+      <NewsFeed />
       <FlipCard />
     </div>
   );

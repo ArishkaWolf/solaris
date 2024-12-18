@@ -3,8 +3,8 @@
     justify-content: center;
     align-items: center;
     perspective: 1000px; /* Для эффекта 3D */
-    width: 300px;
-    height: 400px;
+    width: 340px;
+    height: 700px;
     margin: 20px auto;
   }
   
@@ -29,24 +29,26 @@
     height: 100%;
     backface-visibility: hidden; /* Скрывает сторону, которая не видна */
     border-radius: 10px;
-    box-shadow: 0px 14px 39px -11px rgb(194, 161, 208);
+    box-shadow: 0px 14px 39px -11px rgba(194, 161, 208, 0.5);
     overflow: hidden;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
-    box-sizing: border-box; /* Убедиться, что padding не ломает размеры */
+    box-sizing: border-box;
     transform: translateZ(0); /* Исправление размытости текста */
   }
   
   .front {
-    background: none; /* Убираем белый фон */
+    background: none;
   }
   
   .back {
     background: #000; /* Цвет задней стороны карточки */
     color: #fff;
-    transform: rotateY(180deg); /* Повернуть заднюю сторону сразу */
+    transform: rotateY(180deg);
+    padding: 10px;
   }
   
   .coverImage {
@@ -55,17 +57,46 @@
     object-fit: cover; /* Изображение занимает весь размер карточки */
   }
   
-  .infoText {
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 20px; /* Немного отступов для текста */
-    text-align: center;
+  .backImage {
+    width: 100%;
+    height: 65%; /* Картинка занимает верхние 60% задней стороны */
+    object-fit: cover; /* Обеспечить правильное масштабирование */
+    border-radius: 10px 10px 0 0; /* Скругление только верхних углов */
   }
   
-  /* Убедиться, что текст четкий */
-  .front,
-  .back {
-    -webkit-font-smoothing: antialiased; /* Четкость текста */
-    -moz-osx-font-smoothing: grayscale; /* Четкость текста для macOS */
+  .backText {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: -4px;
+    text-align: left;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  .source {
+    font-size: 12px;
+    margin-top: auto;
+    text-align: left;
+  }
+  
+  .sourceLink {
+    color: #8aaaff;
+    text-decoration: none;
+  }
+  
+  .sourceLink:hover {
+    text-decoration: underline;
   }
   

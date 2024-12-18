@@ -6,7 +6,7 @@ export default function Translation() {
 Любовь это чувство, которое можно переживать, но объяснить нельзя. Объяснить можно понятие. А любишь то, что можно потерять.`;
 
   return (
-    <section className={styles.descriptionSection}>
+    <section className={styles.TransltionSection}>
       <p>{text}</p>
     </section>
   );

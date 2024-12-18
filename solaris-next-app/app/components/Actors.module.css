@@ -40,15 +40,15 @@
   display: block;
   margin: 0 auto;
 }
-.productDescription {
+.Name {
   position: absolute;
   width: 282px;
   height: 42px;
   left: 14px;
-  top: 266px;
-  color: var(--black);
+  right: 8px;
+  top: 284px;
   font-family: Inter, sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   line-height: 130%;
   text-align: left;
 }
@@ -62,7 +62,7 @@
   font-size: 18px;
   font-weight: 300;
   text-align: left;
-  top: 336px;
+  top: 358px;
   left: 14px;
 }
 .roleName {
@@ -82,7 +82,7 @@
   font-size: 18px;
   font-weight: 300;
   text-align: left;
-  top: 368px;
+  top: 388px;
   left: 14px;
   right: 14px;
 }
@@ -96,10 +96,10 @@
 .button {
   font-size: 14px;
   font-weight: bold;
-  background-color: #65058f;
+  background-color: #4f0170;
   color: white;
-  width: 200px;
-  height: 44px;
+  width: 260px;
+  height: 60px;
   margin: 0 auto;
   border: none;
   border-radius: 5px;

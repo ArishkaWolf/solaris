@@ -23,9 +23,19 @@ export const FlipCard = () => {
         </div>
         {/* Задняя сторона карточки */}
         <div className={styles.back}>
-          <p className={styles.infoText}>
-            Это текст, который будет отображаться на обратной стороне карточки.
-          </p>
+          <img
+            src="/cards/hands.jpeg" // Замени путь на изображение картины
+            alt="The Hands Resist Him"
+            className={styles.backImage}
+          />
+          <div className={styles.backText}>
+            <p className={styles.title}>«The Hands Resist Him» Билл Стоунхэм</p>
+            <p className={styles.description}>
+              Автор уверяет, что на картине изображен он сам в возрасте пяти лет,
+              дверь – представление разделительной линии между реальным миром и миром
+              снов, а кукла – проводник, который сможет провести мальчика через этот мир.
+            </p>
+          </div>
         </div>
       </div>
     </div>
