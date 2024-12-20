@@ -16,7 +16,7 @@ export const FlipCard = () => {
         {/* Передняя сторона карточки */}
         <div className={styles.front}>
           <img
-            src="/cards/card.jpg" // Замени путь на свою картинку
+            src="/cards/cardd.jpg" 
             alt="Card Cover"
             className={styles.coverImage}
           />
@@ -24,7 +24,7 @@ export const FlipCard = () => {
         {/* Задняя сторона карточки */}
         <div className={styles.back}>
           <img
-            src="/cards/hands.jpeg" // Замени путь на изображение картины
+            src="/cards/hands.jpeg" 
             alt="The Hands Resist Him"
             className={styles.backImage}
           />
