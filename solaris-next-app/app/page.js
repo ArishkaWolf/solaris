@@ -8,6 +8,7 @@ import Description from './components/Description';
 import Translation from './components/Translation'; 
 import { FlipCard } from './components/FlipCard';
 import { NewsFeed } from './components/NewsFeed';
+import CardSection from './components/CardSection';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Translation />
       <TracksSection />
       <NewsFeed />
+      <CardSection />
       <FlipCard />
     </div>
   );

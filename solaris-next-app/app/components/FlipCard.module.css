@@ -2,9 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px; /* Для эффекта 3D */
-    width: 340px;
-    height: 700px;
+    perspective: 1000px; 
+    width: 380px;
+    height: 760px;
     margin: 20px auto;
   }
   
@@ -13,13 +13,13 @@
     height: 100%;
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 0.6s ease-in-out; /* Плавная анимация */
+    transition: transform 0.6s ease-in-out;
     cursor: pointer;
-    will-change: transform; /* Оптимизация производительности */
+    will-change: transform; 
   }
   
   .flipped {
-    transform: rotateY(180deg); /* Переворот карточки */
+    transform: rotateY(180deg); 
   }
   
   .front,
@@ -27,7 +27,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    backface-visibility: hidden; /* Скрывает сторону, которая не видна */
+    backface-visibility: hidden; 
     border-radius: 10px;
     box-shadow: 0px 14px 39px -11px rgba(194, 161, 208, 0.5);
     overflow: hidden;
@@ -37,7 +37,7 @@
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    transform: translateZ(0); /* Исправление размытости текста */
+    transform: translateZ(0); 
   }
   
   .front {
@@ -45,7 +45,7 @@
   }
   
   .back {
-    background: #000; /* Цвет задней стороны карточки */
+    background: #000; 
     color: #fff;
     transform: rotateY(180deg);
     padding: 10px;
@@ -54,14 +54,14 @@
   .coverImage {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Изображение занимает весь размер карточки */
+    object-fit: cover; 
   }
   
   .backImage {
     width: 100%;
-    height: 65%; /* Картинка занимает верхние 60% задней стороны */
-    object-fit: cover; /* Обеспечить правильное масштабирование */
-    border-radius: 10px 10px 0 0; /* Скругление только верхних углов */
+    height: 75%; 
+    object-fit: cover; 
+    border-radius: 10px 10px 0 0; 
   }
   
   .backText {

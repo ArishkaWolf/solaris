@@ -7,6 +7,7 @@ export default function Translation() {
 
   return (
     <section className={styles.TransltionSection}>
+      <h2 className={styles.TranslationHeading}>Перевод монолога Афроамериканки</h2>
       <p>{text}</p>
     </section>
   );
