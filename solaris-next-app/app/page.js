@@ -9,6 +9,8 @@ import Translation from './components/Translation';
 import { FlipCard } from './components/FlipCard';
 import { NewsFeed } from './components/NewsFeed';
 import CardSection from './components/CardSection';
+import FooterSection from './components/FooterSection';
+
 
 export default function Home() {
   return (
@@ -22,6 +24,7 @@ export default function Home() {
       <NewsFeed />
       <CardSection />
       <FlipCard />
+      <FooterSection />
     </div>
   );
 }
