@@ -26,7 +26,7 @@
     {
         "id": 3,
         "nameRu": "Иванов Артем Сергеевич",
-        "image": "/actors/sasha.jpg",
+        "image": "/actors/artyom.jpg",
         "fact":"Артем сначала был 'виртуальным актером'",
         "role": "Снаут",
         "brand": {
